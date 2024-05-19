@@ -1,9 +1,12 @@
 # GitHub Actions runner (Ubuntu 22.04)
 
-An ephemeral GitHub action runner in a Docker container.
+An ephemeral GitHub action runner in a Docker container. 
 
-## Requirements
-* Docker
+This container is automatically checked weekly and updated with the latest
+version of [actions runner](https://github.com/actions/runner).
+
+See [packages](https://github.com/Onvox/actions-runner-ubuntu2204/pkgs/container/actions-runner-ubuntu2204) 
+for the available runner version tags.
 
 ## Getting Started
 
