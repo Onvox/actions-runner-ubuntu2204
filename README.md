@@ -1,4 +1,5 @@
 # GitHub Actions runner (Ubuntu 22.04)
+![ghcr-version](https://ghcr-badge.deta.dev/onvox/actions-runner-ubuntu2204/tags?color=%2344cc11&ignore=latest&n=3&label=actions-runner)
 
 An ephemeral GitHub action runner in a Docker container. 
 
