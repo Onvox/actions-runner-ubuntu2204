@@ -24,8 +24,8 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \
 
 # cd into the user directory, download and unzip the github actions runner
 RUN cd /home/github && mkdir actions-runner && cd actions-runner \
-    && curl -O -L https://github.com/actions/runner/releases/download/v${GH_RUNNER_VERSION}/actions-runner-linux-x64-${GH_RUNNER_VERSION}.tar.gz \
-    && tar xzf ./actions-runner-linux-x64-${GH_RUNNER_VERSION}.tar.gz
+    && curl -O -L https://github.com/actions/runner/releases/download/v$GH_RUNNER_VERSION/actions-runner-linux-x64-${GH_RUNNER_VERSION}.tar.gz \
+    && tar xzf ./actions-runner-linux-x64-$GH_RUNNER_VERSION.tar.gz
 
 # symlink /opt/hostedtoolcache to ~github/actions-runner/_work/_tool
 # see https://github.com/actions/setup-python/issues/551
