@@ -20,7 +20,8 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \
     libffi-dev \
     libssl-dev \
     lsb-release \
-    openssh-client
+    openssh-client \
+    rsync
 
 # cd into the user directory, download and unzip the github actions runner
 RUN cd /home/github && mkdir actions-runner && cd actions-runner \
